@@ -8,6 +8,7 @@ This Script prompts the user to enter the host name and range of ports and then 
 
 Once the Scanning is Completed. If any ports are found to be open they are added to a list and displayed at the end of the scan. The TLS version and Cipher Suite used by the target host are also displayed at the end.
 ![def](https://user-images.githubusercontent.com/93094166/227742495-aa94ba23-4b9e-4deb-b0f0-7d40cc42d012.png)
+
 This is How the Tool Works!
 
 
