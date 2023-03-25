@@ -30,9 +30,9 @@ try:
             tls_version = ssock.version()
             cipher_suite = ssock.cipher()
 except:
-    print("error")
+    print("[+] Can't connect to the port 443"+"\n"+"[+] TRY AGAIN!")
 
-print("Enter the range of ports to scan the Target")
+print("[+] Enter the range of ports to scan the Target")
 startport = int(input("Enter the Start Port: "))
 endport = int(input("Enter the End Port: "))
 
@@ -58,7 +58,7 @@ except socket.error as err:
 time_finish = datetime.now()
 total_time = time_finish - time_init
 
-print("TLS Version of the hostname:", tls_version)
-print("Cipher Suite used by the hostname:", cipher_suite)
-print("Open ports:", open_ports)
-print("Total time to Scan the process is:", total_time)
+print("[+] TLS Version of the hostname:", tls_version)
+print("[+] Cipher Suite used by the hostname:", cipher_suite)
+print("[+] Open ports:", open_ports)
+print("[+] Total time to Scan the process is:", total_time)
